@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "77f945dc-8188-4c64-a6db-13529f7e534c",
+		"name": "ColorsApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateColor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"azul\",\n    \"year\": 2012,\n    \"color\": \"#98B2D2\",\n    \"pantone_value\": \"15-4420\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/colors",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"colors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOneColor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/colors/61a4604515e031f841cbe8b6",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"colors",
+						"61a4604515e031f841cbe8b6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllColors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/colors",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"colors"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
