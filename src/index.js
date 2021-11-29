@@ -1,5 +1,5 @@
 const express = require('express');
-const config = require('./src/config');
+const config = require('./config');
 const mongoose = require('mongoose');
 const { newColor, getColors, getOneColor} = require('./controller/color');
 const app = express();
